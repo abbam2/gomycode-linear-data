@@ -18,4 +18,6 @@ BEGIN
         END_IF
         END_FOR
     END_FOR
+    Write(sum)
+
 END
