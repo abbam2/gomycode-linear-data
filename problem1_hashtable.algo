@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    htab1: HASH_TABLE<INTEGER,INTEGER>;
+    htab2: HASH_TABLE<INTEGER,INTEGER>;
+    tab1 : ARRAY_OF INTEGER[];
+    tab2 : ARRAY_OF INTEGER[];
+BEGIN
+    Read(HASH_TABLE1)
+    Read(HASH_TABLE2)
+    M:= tab1.length-1
+    N:= tab2.length-1
+    tab1:=HASH_TABLE1.getkeys
+    tab2:=HASH_TABLE2.getkeys
+    FOR i FROM 0 TO M  DO
+        FOR j FROM 0 TO N  DO
+        IF (htab1.get(tab1[i])<>htab2.get(tab2[j])) THEN
+        sum:=sum+htab1.get(tab1[i])+htab2.get(tab2[j]))
+        END_IF
+        END_FOR
+    END_FOR
+END
