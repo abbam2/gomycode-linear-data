@@ -1,0 +1,18 @@
+ALGORITHM problem1_array
+VAR
+    s1: ARRAY_OF INTEGER[5];
+    s2: ARRAY_OF INTEGER[5];
+    sum:INTEGER:=0;
+BEGIN
+    
+    Read(s1)
+    Read(s2)
+    FOR i FROM 0 TO 5  DO
+        FOR j FROM 0 TO 5  DO
+        IF (s1[i]<>s2[j]) THEN
+        sum:= sum + s1[i] + s2[j]
+        END_IF
+        END_FOR
+    END_FOR
+    Write(sum)
+END
